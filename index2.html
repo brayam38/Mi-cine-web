@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f1c40f;
+            margin-bottom: 40px;
+        }
+
+        .cartelera-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .pelicula-card {
+            background-color: #262626;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .pelicula-imagen {
+            flex: 0 0 200px; 
+            text-align: center;
+        }
+
+        .pelicula-imagen img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+            background-color: #333; 
+        }
+
+        .pelicula-info {
+            flex: 1;
+        }
+
+        .pelicula-titulo {
+            font-size: 1.5rem;
+            color: #f1c40f;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .sinopsis-titulo {
+            font-weight: bold;
+            color: #cccccc;
+            margin-bottom: 5px;
+        }
+
+        .pelicula-sinopsis {
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .pelicula-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .pelicula-imagen {
+                flex: 0 0 auto;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cartelera de Cine</h1>
+
+    <div class="cartelera-container">
+
+        <div class="pelicula-card">
+            <div class="pelicula-imagen">
+                <img src="anais.jpg" alt="Póster Los amores de Anaïs">
+            </div>
+            <div class="pelicula-info">
+                <h2 class="pelicula-titulo">Los amores de Anaïs</h2>
+                <p class="sinopsis-titulo">Sinopsis:</p>
+                <p class="pelicula-sinopsis">Anaïs tiene 30 años y es inestable en lo económico y en el amor. Un día conoce a Daniel y este siente un profundo flechazo por ella. Pero Daniel vive con Emilie que rápidamente también se siente cautivada por Anaïs. Esta es la historia de una joven parisina inquieta y un tanto alocada con un profundo deseo de amar.</p>
+            </div>
+        </div>
+
+        <div class="pelicula-card">
+            <div class="pelicula-imagen">
+                <img src="mancha.jpg" alt="Póster La mancha negra">
+            </div>
+            <div class="pelicula-info">
+                <h2 class="pelicula-titulo">La mancha negra</h2>
+                <p class="sinopsis-titulo">Sinopsis:</p>
+                <p class="pelicula-sinopsis">Matilde Cisneros es una anciana que vive junto a sus tres hijas en un pequeño pueblo del interior de Andalucía a principios de los años 70. Tras la muerte de Matilde, sus hijas se disponen a preparar su velatorio, a pesar de que todo el pueblo les da la espalda. La herencia de Matilde, compuesta de propiedades y terrenos, y la llegada de un inesperado hermano mayor, convierte la codicia y el propio interés en el eje de la historia.</p>
+            </div>
+        </div>
+
+        <div class="pelicula-card">
+            <div class="pelicula-imagen">
+                <img src="medium.png" alt="Póster The Medium">
+            </div>
+            <div class="pelicula-info">
+                <h2 class="pelicula-titulo">The Medium</h2>
+                <p class="sinopsis-titulo">Sinopsis:</p>
+                <p class="pelicula-sinopsis">En una aldea rural en la región de Isan, en el noreste de Tailandia, sus habitantes creen que todas las cosas y todos los lugares poseen un espíritu: las casas, los bosques, las montañas, los árboles e incluso los campos de arroz. Un equipo documental se desplaza hasta allí para hacer un seguimiento de la historia de Nim, una chamán que ha creído ver extraños signos en su sobrina Mink que demostrarían que está a punto de ser poseída por la diosa Bayan y heredar su chamanismo como ha sucedido a lo largo de generaciones en su familia. Pero mientras tratan de capturar el misterioso fenómeno, el comportamiento de la joven se vuelve cada vez más extremo y Nim comienza a sospechar que lo que la posee no es la diosa que todos esperaban que fuera.</p>
+            </div>
+        </div>
+
+        <div class="pelicula-card">
+            <div class="pelicula-imagen">
+                <img src="ainbo.jpg" alt="Póster Ainbo">
+            </div>
+            <div class="pelicula-info">
+                <h2 class="pelicula-titulo">Ainbo</h2>
+                <p class="sinopsis-titulo">Sinopsis:</p>
+                <p class="pelicula-sinopsis">La pequeña Ainbo vive en lo más profundo de la selva amazónica. Tras perder a su madre y pelearse con los adultos de su aldea, esta joven arquera emprende un viaje para salvar a su pueblo del poder destructor del hombre blanco. En su viaje épico la acompañan sus guías espirituales: Dillo, un armadillo pequeño y divertido, y Vaca, un tapir de gran tamaño. Todos ellos se embarcan en una aventura para salvar su hogar, situado en ese espectacular entorno natural.</p>
+            </div>
+        </div>
+
+        <div class="pelicula-card">
+            <div class="pelicula-imagen">
+                <img src="casate.jpg" alt="Póster Cásate conmigo">
+            </div>
+            <div class="pelicula-info">
+                <h2 class="pelicula-titulo">Cásate conmigo</h2>
+                <p class="sinopsis-titulo">Sinopsis:</p>
+                <p class="pelicula-sinopsis">La superestrella musical Kat Valdez (Jennifer Lopez) y el profesor de matemáticas Charlie Gilbert (Owen Wilson), dos perfectos desconocidos deciden, primero, casarse y luego, poco a poco, conocerse. En un mundo dominado por los clics, las visitas y el número de seguidores, este insospechado romance entre dos personas radicalmente distintas en busca de emociones reales contrasta el amor sobre la fama, el matrimonio y las redes sociales.</p>
+            </div>
+        </div>
+
+        <div class="pelicula-card">
+            <div class="pelicula-imagen">
+                <img src="Tailor.webp" alt="Póster Tailor (El sastre)">
+            </div>
+            <div class="pelicula-info">
+                <h2 class="pelicula-titulo">Tailor (El sastre)</h2>
+                <p class="sinopsis-titulo">Sinopsis:</p>
+                <p class="pelicula-sinopsis">Nikos vive en el ático de la sastrería familiar. Cuando el banco amenaza con embargar la sastrería y su padre cae enfermo, Nikos entra en acción: con una maravillosa, aunque extraña sastrería sobre ruedas, consigue reinventarse a sí mismo aportando estilo y confianza a las mujeres de Atenas con preciosos vestidos.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
